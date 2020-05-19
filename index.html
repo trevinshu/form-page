@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Fruit Survey Form</h1>
+        <p id="description">This survey is to determine people's favorite fruit from a given list of fruit choices.</p>
+    </header>
+    <main>
+        <form action="#" id="survey-form">
+
+            <div class="container-one">
+                <div class="name">
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="John Doe" required>
+                </div>
+                <div class="email">
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="johndoe@email.com" required>
+                </div>
+                <div class="number">
+                    <label for="number" id="number-label">Age:</label>
+                    <input type="number" name="number" id="number" placeholder="10" min="1" max="100">
+                </div>
+            </div>
+
+            <div class="container-two">
+                <p>What is your favorite fruit?</p>
+                <select name="dropdown" id="dropdown" required>
+                    <option value="" disabled selected>Select your fruit</option>
+                    <option value="#">Apple</option>
+                    <option value="#">Grape</option>
+                    <option value="#">Mango</option>
+                    <option value="#">Strawberry</option>
+                    <option value="#">Raspberry</option>
+                </select>
+            </div>
+
+            <div class="container-three">
+                <p>Do you have any other fruits you like? (Check all that you like)</p>
+                <label>
+                    <input type="checkbox" value="grapefruit" name="check-options">
+                    Grapefruit
+                </label>
+                <label>
+                    <input type="checkbox" value="peach" name="check-options">
+                    Peach
+                </label>
+                <label>
+                    <input type="checkbox" value="tomato" name="check-options">
+                    Tomato
+                </label>
+                <label>
+                    <input type="checkbox" value="pineapple" name="check-options">
+                    Pineapple
+                </label>
+            </div>
+
+            <div class="container-four">
+                <p>Was your favorite fruit one of the options?</p>
+                <label>
+                    <input type="radio" name="radio-option" value="yes">
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="radio-option" value="no">
+                    No
+                </label>
+            </div>
+
+            <div class="container-five">
+                <p>Do have any comments or suggestions about this survey?</p>
+                <textarea name="comment" id="comments" cols="50" rows="10"></textarea>
+            </div>
+
+            <div class="container-six">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

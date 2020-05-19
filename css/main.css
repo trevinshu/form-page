@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #333333;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+header > h1 {
+    padding-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    color: white;
+    text-align: center;
+}
+
+header > p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 5rem;
+}
+
+.container-one, .container-two, .container-three, .container-four, .container-five, .container-six {
+    width: 50%;
+    margin: auto;
+}
+
+.container-one > .name > #name-label, .container-one > .email > #email-label, .container-one > .number > #number-label {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    display: block;
+}
+
+.container-one > .name > #name, .container-one > .email > #email, .container-one > .number > #number {
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border: solid 0.1rem black;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+
+.container-two > p, .container-three > p, .container-four > p, .container-five > p {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.container-two > #dropdown {
+    width: 50%;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border: solid 0.1rem black;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+
+.container-two > select > option {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.container-three, .container-four {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-three > label, .container-four > label  {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.container-five > textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 20rem;
+    max-height: 20rem;
+}
+
+.container-six {
+    display: flex;
+    justify-content: center;
+}
+
+.container-six > button {
+    margin: 1rem 0;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
